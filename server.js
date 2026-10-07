@@ -290,7 +290,7 @@ const server = http.createServer((req, res) => {
 
                                     <a
                                         class="button"
-                                        href="/pagamento.html"
+                                        href="/doacao.html"
                                     >
                                         Novo pagamento
                                     </a>
