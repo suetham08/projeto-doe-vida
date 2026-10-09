@@ -9,22 +9,34 @@
 <title>Doe vida</title>
 
 </head> <body>
-<header>
-    <h1>Faça sua doação:</h1>
-
-    <nav>
-        <a href="index.html">Ínicio</a>
+<header class="site-header">
+    <a class="brand" href="index.html" aria-label="Doe Vida - página inicial">
+        <img class="logo" src="img/aaaaaaaaa.jpg" alt="Logotipo da ONG Doe Vida">
+        <span>Doe <strong>Vida</strong><small>ONG de conscientização sobre doação de sangue</small></span>
+    </a>
+    <nav class="main-nav" aria-label="Navegação principal">
+        <a href="index.html">Início</a>
         <a href="projetos.html">Projetos</a>
         <a href="contato.html">Contato e apoio</a>
-        <a href="doacao.html">Doação</a>
+        <a class="nav-cta" href="doacao.html" aria-current="page">Quero doar</a>
     </nav>
 </header>
 
 <main>
 
+    <section class="page-hero donation-hero">
+        <span class="eyebrow">Sua contribuição importa</span>
+        <h1>Faça sua doação</h1>
+        <p>Escolha um valor e uma forma de pagamento para continuar. Esta página faz parte de um projeto acadêmico demonstrativo.</p>
+    </section>
+
     <section class="form-container">
 
-        <h2>Código:</h2>
+        <div class="donation-form-heading">
+            <span class="eyebrow">Contribuição</span>
+            <h2>Dados da doação</h2>
+            <p>Preencha o código de 6 dígitos, defina o valor e selecione uma forma de pagamento.</p>
+        </div>
 
             <form id="paymentForm"
                   action="/pagto"
@@ -121,43 +133,20 @@
 
                 <h4>Tipo de pagamento:</h4>
 
-                <input
-                    type="radio"
-                    id="pix"
-                    name="tipo"
-                    value="0"
-                    required
-                >
-
-                <label for="pix">
-                    Pix
-                </label>
-
-                <br>
-
-                <input
-                    type="radio"
-                    id="cc"
-                    name="tipo"
-                    value="1"
-                >
-
-                <label for="cc">
-                    Cartão de Crédito
-                </label>
-
-                <br>
-
-                <input
-                    type="radio"
-                    id="cartaodebito"
-                    name="tipo"
-                    value="2"
-                >
-
-                <label for="cartaodebito">
-                    Cartão de Débito
-                </label>
+                <div class="payment-options">
+                    <div class="payment-option">
+                        <input type="radio" id="pix" name="tipo" value="0" opcao="Pix" required>
+                        <label for="pix"><span class="payment-name">Pix</span><small>Transferência instantânea</small></label>
+                    </div>
+                    <div class="payment-option">
+                        <input type="radio" id="cc" name="tipo" value="1" opcao="Cartão de Crédito">
+                        <label for="cc"><span class="payment-name">Cartão de crédito</span><small>Pagamento no crédito</small></label>
+                    </div>
+                    <div class="payment-option">
+                        <input type="radio" id="cartaodebito" name="tipo" value="2" opcao="Cartão de Débito">
+                        <label for="cartaodebito"><span class="payment-name">Cartão de débito</span><small>Pagamento no débito</small></label>
+                    </div>
+                </div>
 
             </div>
 
@@ -175,8 +164,10 @@
 
 </main>
 
-<footer>
-    <p>Organização</p>
+<footer class="site-footer">
+    <a class="footer-brand" href="index.html">Doe <strong>Vida</strong></a>
+    <p>Conscientização, solidariedade e cuidado com a vida.</p>
+    <small>© 2026 Doe Vida. Projeto acadêmico demonstrativo.</small>
 </footer>
 
 </body> </html>

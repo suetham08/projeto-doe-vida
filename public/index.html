@@ -3,80 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Doe Vida — conscientização e incentivo à doação de sangue.">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
-    <title>Doe Vida</title>
+    <title>Início | Doe Vida</title>
 </head>
 <body>
-
-    <header>
-        <h1>Doe vida! ONG de Conscientização sobre Doação de Sangue</h1>
-        <img src="img/aaaaaaaaa.jpg" width=300 height=300 alt="logo"/>
-
-        <nav>
-        <a href="index.html">Ínicio</a>
-        <a href="projetos.html">Projetos</a>
-        <a href="contato.html">Contato e apoio</a>
-        <a href="doacao.html">Doação</a>
+    <header class="site-header">
+        <a class="brand" href="index.html" aria-label="Doe Vida - página inicial">
+            <img class="logo" src="img/aaaaaaaaa.jpg" alt="Logotipo da ONG Doe Vida">
+            <span>Doe <strong>Vida</strong><small>ONG de conscientização sobre doação de sangue</small></span>
+        </a>
+        <nav class="main-nav" aria-label="Navegação principal">
+            <a href="index.html" aria-current="page">Início</a>
+            <a href="projetos.html">Projetos</a>
+            <a href="contato.html">Contato e apoio</a>
+            <a class="nav-cta" href="doacao.html">Quero doar</a>
         </nav>
-
-
     </header>
-<main>
 
-   <section>
-    <h2>Quem somos</h2>
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <span class="eyebrow">Um gesto simples pode salvar vidas</span>
+                <h1>Doe sangue.<br><span>Compartilhe vida.</span></h1>
+                <p>Bem-vindo à Doe Vida! Trabalhamos para aproximar doadores de quem precisa, levando informação, esperança e solidariedade a toda a comunidade.</p>
+                <div class="hero-actions">
+                    <a class="button" href="doacao.html">Apoie nossa causa</a>
+                    <a class="button button-outline" href="projetos.html">Conheça os projetos</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="img/mascote.png" alt="Mascote da ONG Doe Vida, símbolo de cuidado e solidariedade">
+            </div>
+        </section>
 
-    <div class="quem-somos-grid">
+        <section class="section section-intro">
+            <div class="section-heading">
+                <span class="eyebrow">Quem somos</span>
+                <h2>Solidariedade que corre nas veias</h2>
+            </div>
+            <div class="intro-grid">
+                <article class="intro-copy">
+                    <p>Todos os dias, pessoas precisam de uma doação de sangue para continuar suas histórias. A Doe Vida nasceu para incentivar esse gesto de generosidade e ajudar a comunidade a entender como doar pode fazer a diferença.</p>
+                    <p>Promovemos conscientização, compartilhamos informações e incentivamos mais pessoas a se tornarem doadoras. Acreditamos que cada pessoa pode contribuir para uma rede de cuidado e esperança.</p>
+                    <a class="text-link" href="contato.html">Faça parte dessa iniciativa <span aria-hidden="true">→</span></a>
+                </article>
+                <aside class="mission-card">
+                    <span class="mission-icon" aria-hidden="true">♥</span>
+                    <h3>Nossa missão</h3>
+                    <p>Incentivar a doação de sangue e conscientizar a comunidade sobre a importância desse ato de solidariedade, conectando pessoas e fortalecendo a cultura de cuidado com a vida.</p>
+                </aside>
+            </div>
+        </section>
 
-        <div class="descricao-quemsomos">
-            <p>
-                <strong>Doe sangue. Compartilhe vida.</strong>
-            </p>
+        <section class="support-banner">
+            <div>
+                <span class="eyebrow">Toda ajuda importa</span>
+                <h2>Você pode fazer parte dessa corrente.</h2>
+                <p>Conheça nossas iniciativas ou entre em contato para saber como colaborar.</p>
+            </div>
+            <a class="button button-light" href="contato.html">Quero participar</a>
+        </section>
+    </main>
 
-            <p>
-                Todos os dias, pessoas precisam de uma doação de sangue
-                para continuar suas histórias.
-            </p>
-
-            <p>
-                A nossa ONG existe para aproximar quem pode doar de quem precisa,
-                promovendo solidariedade, esperança e cuidado com a vida.
-            </p>
-
-            <p>
-                Uma simples doação pode fazer uma diferença enorme.
-                Junte-se a nós e transforme alguns minutos do seu dia
-                em uma nova chance para alguém.
-            </p>
-        </div>
-
-        <div class="imagem-quem-somos">
-            <img src="img/mascote.png" alt="Mascote da Doe Vida">
-        </div>
-
-    </div>
-
-    <h3>Missões e valores</h3>
-
-    <p class="missoes-valores">
-        Nossa missão é incentivar a doação de sangue e conscientizar
-        a comunidade sobre a importância desse ato de solidariedade.
-    </p>
-
-    <a href="cadastro.html">
-        <button type="button">DOE AGORA</button>
-    </a>
-
-</section>
-
-
-
-</main>
-
-<footer>
-    <p>Organização</p>
-</footer>
-
+    <footer class="site-footer">
+        <a class="footer-brand" href="index.html">Doe <strong>Vida</strong></a>
+        <p>Conscientização, solidariedade e cuidado com a vida.</p>
+        <small>© 2026 Doe Vida. Projeto de conscientização sobre doação de sangue.</small>
+    </footer>
 </body>
-</html
+</html>

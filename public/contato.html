@@ -3,39 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Entre em contato com a ONG Doe Vida e saiba como ser voluntário.">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
-    <title>Contate-nos</title>
+    <title>Contato e apoio | Doe Vida</title>
 </head>
 <body>
-
-    <header>
-        <h1>Entre em contato</h1>
-
-        <nav>
-        <a href="index.html">Ínicio</a>
-        <a href="projetos.html">Projetos</a>
-        <a href="contato.html">Contato e apoio</a>
-        <a href="doacao.html">Doação</a>
+    <header class="site-header">
+        <a class="brand" href="index.html" aria-label="Doe Vida - página inicial">
+            <img class="logo" src="img/aaaaaaaaa.jpg" alt="Logotipo da ONG Doe Vida">
+            <span>Doe <strong>Vida</strong><small>ONG de conscientização sobre doação de sangue</small></span>
+        </a>
+        <nav class="main-nav" aria-label="Navegação principal">
+            <a href="index.html">Início</a>
+            <a href="projetos.html">Projetos</a>
+            <a href="contato.html" aria-current="page">Contato e apoio</a>
+            <a class="nav-cta" href="doacao.html">Quero doar</a>
         </nav>
-
-
     </header>
-<main>
 
-    <section>
-        <h2>CONTATOS</h2>
+    <main>
+        <section class="page-hero">
+            <span class="eyebrow">Vamos conversar</span>
+            <h1>Entre em contato</h1>
+            <p>Quer apoiar a causa, tirar dúvidas ou participar como voluntário? Envie uma mensagem para a Doe Vida.</p>
+        </section>
 
-    </section>
+        <section class="section contact-layout">
+            <aside class="illustrative-notice" role="note" aria-label="Aviso sobre informações ilustrativas">
+                <span class="notice-mark" aria-hidden="true">i</span>
+                <div>
+                    <strong>Aviso: conteúdo ilustrativo</strong>
+                    <p>Esta página é uma demonstração acadêmica. Os dados de contato, endereço, redes sociais e formulário são exemplos e não representam canais oficiais de atendimento da ONG. O envio da mensagem depende do aplicativo de e-mail configurado no dispositivo.</p>
+                </div>
+            </aside>
+            <div class="contact-info">
+                <span class="eyebrow">Fale com a gente</span>
+                <h2>Estamos aqui para ouvir você.</h2>
+                <p>Use os canais abaixo para entrar em contato ou conhecer formas de apoiar nossas iniciativas.</p>
+                <div class="contact-item"><span class="contact-symbol" aria-hidden="true">@</span><div><h3>E-mail</h3><a href="mailto:contato@doevida.org.br">contato@doevida.org.br</a></div></div>
+                <div class="contact-item"><span class="contact-symbol" aria-hidden="true">☎</span><div><h3>Telefone</h3><a href="tel:+551130001234">(11) 3000-1234</a><small>Exemplo ilustrativo para o projeto acadêmico</small></div></div>
+                <div class="contact-item"><span class="contact-symbol" aria-hidden="true">⌖</span><div><h3>Endereço</h3><p>São Paulo — SP, Brasil</p><small>Endereço demonstrativo; substitua pelos dados oficiais da ONG.</small></div></div>
+                <div class="social-links"><h3>Redes sociais</h3><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram ↗</a><a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">Facebook ↗</a><a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a></div>
+                <aside class="volunteer-card"><h3>Seja voluntário</h3><p>Ajude a divulgar campanhas, compartilhar informações e mobilizar mais pessoas para essa causa. Escreva para nós contando como gostaria de colaborar.</p></aside>
+            </div>
 
+            <div class="contact-form-card">
+                <h2>Envie uma mensagem</h2>
+                <p>Preencha os campos e conte como podemos ajudar.</p>
+                <form class="contact-form" action="mailto:contato@doevida.org.br" method="post" enctype="text/plain">
+                    <label for="nome">Nome completo</label>
+                    <input type="text" id="nome" name="nome" placeholder="Como podemos chamar você?" autocomplete="name" required>
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" placeholder="voce@exemplo.com" autocomplete="email" required>
+                    <label for="assunto">Assunto</label>
+                    <select id="assunto" name="assunto" required>
+                        <option value="">Selecione um assunto</option>
+                        <option value="Voluntariado">Quero ser voluntário</option>
+                        <option value="Parceria">Parcerias</option>
+                        <option value="Informações">Informações sobre doação</option>
+                        <option value="Outro">Outro assunto</option>
+                    </select>
+                    <label for="mensagem">Mensagem</label>
+                    <textarea id="mensagem" name="mensagem" rows="5" placeholder="Escreva sua mensagem..." required></textarea>
+                    <button class="button" type="submit">Enviar mensagem</button>
+                    <small>O envio abre o aplicativo de e-mail configurado no seu dispositivo.</small>
+                </form>
+            </div>
+        </section>
+    </main>
 
-
-
-</main>
-
-<footer>
-    <p>Organização</p>
-</footer>
-
+    <footer class="site-footer">
+        <a class="footer-brand" href="index.html">Doe <strong>Vida</strong></a>
+        <p>Conscientização, solidariedade e cuidado com a vida.</p>
+        <small>© 2026 Doe Vida. Projeto de conscientização sobre doação de sangue.</small>
+    </footer>
 </body>
-</html
+</html>

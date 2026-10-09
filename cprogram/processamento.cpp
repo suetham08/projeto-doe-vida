@@ -35,7 +35,7 @@ int main(int argc, char *argv[])
 
     printf("Codigo: %d\n", codigo);
     printf("Valor: %.2f\n", valor);
-    printf("Metodo: %d\n", opcao);
+    printf("Metodo: %d\n", metodo);
 
     // Record the transaction in JSON
     grava_log(
